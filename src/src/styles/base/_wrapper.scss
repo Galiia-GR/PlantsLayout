@@ -1,0 +1,20 @@
+.container {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 109px;
+
+  @include media-tablet {
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  @include media-mobile {
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+}

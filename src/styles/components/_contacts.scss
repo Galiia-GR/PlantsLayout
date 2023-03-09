@@ -1,0 +1,236 @@
+.contacts {
+  background-color: $color-background;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include media-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contact-header {
+  order: 1;
+  padding-top: 60px;
+  align-items: center;
+  color: $color-primary-dark;
+
+  @include media-tablet {
+    order: -1;
+    padding-top: 40px;
+    font-weight: bold;
+    line-height: 52px;
+    font-size: 40px;
+  }
+
+  @include media-mobile {
+    order: -1;
+    padding-top: 25px;
+    line-height: 33px;
+    font-size: 25px;
+  }
+}
+
+.select-city-block {
+  order: 2;
+  margin-top: 148px;
+  margin-right: 109px;
+  display: flex;
+  align-items: center;
+  background-color: $color-primary-light;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  height: 50px;
+  width: 450px;
+
+  @include media-tablet {
+    order: -1;
+    margin-top: 100px;
+    margin-right: 0;
+  }
+
+  @include media-mobile {
+    order: -1;
+    margin-top: 80px;
+    margin-right: 0;
+    height: 50px;
+    width: 300px;
+  }
+}
+
+.city__text {
+  display: inline-block;
+  width: 204px;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: $color-text-second;
+
+  @include media-mobile {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.contact__img {
+  padding-left: 109px;
+  padding-top: 53px;
+  padding-right: 50px;
+  max-width: 100%;
+
+  @include media-tablet {
+    order: 2;
+    padding: 250px 0 0 0;
+  }
+
+  @include media-mobile {
+    padding: 132px 0 0 0;
+  }
+}
+
+.select-city:last-child {
+  padding-right: 13px;
+}
+
+.city-dropdown {
+  display: none;
+  list-style-type: none;
+  background-color: $color-primary-light;
+  position: absolute;
+  width: 374px;
+  margin-top: 280px;
+  height: 234px;
+  text-align: left;
+  padding-left: 26px;
+  padding-right: 50px;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  color: $color-primary-dark;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  transition: all 0.4s;
+  z-index: 2;
+
+  @include media-mobile {
+    order: -1;
+    margin-top: 283px;
+    margin-right: 0;
+    width: 225px;
+  }
+}
+
+.dropdown-active {
+  display: block;
+  transition: all 0.4s;
+}
+
+.city-dropdown__item {
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 12px;
+  cursor: pointer;
+}
+
+.city-dropdown__item:hover {
+  color: $color-text-second;
+  border-bottom: 1px solid #717171;
+  transition: all 0.4s;
+}
+
+.select-city__card {
+  display: none;
+  position: absolute;
+
+  margin-top: 210px;
+  margin-left: 881px;
+  order: 4;
+  width: 448px;
+  height: 214px;
+  border: 1px solid #636060;
+  border-radius: 20px;
+  background-color: $color-background;
+  transition: all 0.4s;
+
+  @include media-tablet {
+    margin-top: 263px;
+    margin-left: 0px;
+  }
+
+  @include media-mobile {
+    order: -1;
+    margin-top: 200px;
+    margin-left: 0;
+    height: 212px;
+    width: 282px;
+  }
+}
+
+.card-active {
+  display: block;
+  transition: all 0.4s;
+}
+
+.card__link {
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: bold;
+  color: #717171;
+  text-decoration: none;
+  list-style-type: none;
+  transition: all 0.4s;
+}
+
+.select__img {
+  padding-left: 175px;
+
+  @include media-mobile {
+    padding-left: 20px;
+  }
+}
+
+.city__card {
+  padding-left: 35px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  color: black;
+
+  @include media-mobile {
+    order: -1;
+    padding-left: 35px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}
+
+.city__card:first-child {
+  padding-top: 17px;
+}
+
+.card__text {
+  font-family: "Inter";
+  font-weight: normal;
+  color: $color-text-second;
+  font-size: 16px;
+  line-height: 40px;
+  margin-left: auto;
+  padding-right: 92px;
+
+  @include media-mobile {
+    margin-left: auto;
+    line-height: 20px;
+    padding-right: 35px;
+  }
+}

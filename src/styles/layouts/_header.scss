@@ -1,0 +1,55 @@
+.header {
+  background-color: $color-background;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 52px 0 42px 0;
+}
+
+.welcome-logo {
+  font-family: "Inika";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  padding-left: 112px;
+  color: black;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+}
+.navigation-item {
+  list-style-type: none;
+  padding: 0 23px;
+  cursor: pointer;
+  font-family: "Inika";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation__link:hover {
+  color: $color-primary-second;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+li:first-child {
+  padding-left: 0;
+}
+
+.header__navigation {
+  padding-right: 109px;
+}
+
+li:last-child {
+  padding-right: 0;
+}
