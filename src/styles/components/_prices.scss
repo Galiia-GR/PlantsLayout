@@ -1,0 +1,239 @@
+.prices {
+  background-color: #ffffff;
+}
+
+.prices__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include media-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.prices-catalog {
+  padding: 33px 0 128px 109px;
+
+  @include media-tablet {
+    padding: 40px 0 164px 0px;
+  }
+
+  @include media-mobile {
+    padding: 25px 0 20px 0;
+  }
+}
+
+.price-help {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 35px 109px 115px 0;
+
+  @include media-tablet {
+    padding: 139px 0px 88px 0;
+    gap: 21px;
+  }
+
+  @include media-mobile {
+    padding: 0 0 40px;
+    gap: 20px;
+  }
+}
+.prices-head {
+  align-items: flex-start;
+  font-family: "Inter";
+  padding-bottom: 60px;
+
+  @include media-tablet {
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 55px;
+    line-height: 42px;
+    padding-left: 15px;
+  }
+
+  @include media-mobile {
+    font-size: 25px;
+    line-height: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 0;
+  }
+}
+
+.prices-help-head {
+  width: 452px;
+  font-family: "Inter";
+  font-size: 40px;
+  line-height: 50px;
+  margin-left: auto;
+  text-align: right;
+
+  @include media-tablet {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: bold;
+    width: 296px;
+  }
+
+  @include media-mobile {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    width: 230px;
+  }
+}
+
+.price-contact__button {
+  background-color: #ffffff;
+}
+
+.prices-select {
+  width: 332px;
+  border: 1px solid #e3e1d5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include media-mobile {
+    width: 224px;
+    gap: 13px;
+  }
+}
+
+.price__text {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  padding-left: 40px;
+
+  @include media-mobile {
+    font-size: 15px;
+    padding-left: 30px;
+  }
+}
+
+.price__rate {
+  padding-right: 46px;
+}
+
+.price-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 41px 0 41px;
+
+  @include media-mobile {
+    margin: 0 22px 0 22px;
+  }
+}
+
+.prices-catalog .price-item:first-child {
+  margin-top: 34px;
+
+  @include media-mobile {
+    margin-top: 29px;
+  }
+}
+
+.prices-catalog .price-item:last-child {
+  margin-bottom: 34px;
+
+  @include media-mobile {
+    margin-bottom: 29px;
+  }
+}
+
+.price-img {
+  align-self: flex-end;
+
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.price__img {
+  max-width: 100%;
+}
+.price-contact {
+  align-self: flex-end;
+
+  @include media-mobile {
+    align-self: center;
+  }
+}
+
+.price_open {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $color-primary-light;
+  border-radius: 20px;
+}
+
+.price__el {
+  display: none;
+  transition: all 0.4s;
+}
+
+.price_open .price__el {
+  display: block;
+  transition: all 0.4s;
+}
+
+.price_open .price-img {
+  display: block;
+}
+
+.price-line {
+  width: 164px;
+  border: none;
+  margin: -12px 0 6px 40px;
+  height: 0.5px;
+  background-color: #aea1a1;
+
+  @include media-mobile {
+    margin: -12px 0 6px 20px;
+    width: 120px;
+  }
+}
+
+.price_open .price__button {
+  background-color: $color-primary-light;
+}
+
+.price-more__info {
+  font-size: 10px;
+  line-height: 10px;
+  color: $color-text-second;
+  width: 169px;
+  padding-left: 40px;
+  //border-top: 0.5px solid #aea1a1;
+  padding-bottom: 6px;
+
+  @include media-mobile {
+    padding-left: 5px;
+  }
+}
+
+.price__value {
+  font-size: 12px;
+  line-height: 20px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+}
+
+.price-order__link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $color-text-second;
+  text-decoration: none;
+  list-style-type: none;
+  transition: all 0.4s;
+}

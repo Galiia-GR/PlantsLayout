@@ -1,0 +1,29 @@
+.service {
+  background-color: $color-background;
+}
+.service__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 324px 0 109px;
+}
+
+.service-head {
+  color: $color-primary-dark;
+  width: 306px;
+  height: 94px;
+}
+.service-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 38px;
+}
+
+.layout-3-column {
+  padding: 90px 109px 121px 109px;
+}

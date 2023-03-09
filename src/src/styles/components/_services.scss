@@ -1,0 +1,123 @@
+.services {
+  background-color: $color-background;
+}
+.service__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 324px 0 109px;
+
+  @include media-tablet {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 0 0 0;
+  }
+  @include media-mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    padding: 30px 0 0 0;
+  }
+}
+
+.service-head {
+  color: $color-primary-dark;
+  width: 306px;
+  font-weight: normal;
+
+  @include media-mobile {
+    width: 187px;
+  }
+}
+.service-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 38px;
+
+  @include media-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+.layout-3-column {
+  padding: 80px 109px 121px 109px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 115px;
+  row-gap: 50px;
+
+  @include media-tablet {
+    padding: 40px 0 70px 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 107px;
+    row-gap: 38px;
+  }
+
+  @include media-mobile {
+    padding: 40px 25px 27px 25px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 34px;
+  }
+}
+.service__img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  max-width: 100%;
+}
+
+.service__item {
+  text-align: center;
+  border: 1px solid #e3e1d5;
+  border-radius: 20px;
+}
+
+.service__text {
+  color: $color-text-second;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 36px;
+  padding-top: 10px;
+
+  @include media-tablet {
+    padding: 10px 40px 20px 40px;
+    width: 201px;
+    text-align: center;
+  }
+
+  @include media-mobile {
+    padding: 10px 40px 20px 40px;
+    width: 201px;
+    text-align: center;
+  }
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+.active_garden {
+  filter: blur(4px);
+  transition: all 0.4s;
+}
+
+.active_lawn {
+  filter: blur(4px);
+  transition: all 0.4s;
+}
+
+.active_planting {
+  filter: blur(4px);
+  transition: all 0.4s;
+}

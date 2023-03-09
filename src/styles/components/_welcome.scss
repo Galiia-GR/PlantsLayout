@@ -1,0 +1,82 @@
+.welcome {
+  background-color: $color-background;
+}
+
+.welcome__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 214px;
+
+  @include media-tablet {
+    gap: 42px;
+  }
+  @include media-mobile {
+    gap: 0px;
+  }
+}
+
+.welcome-content {
+  display: flex;
+  width: 550px;
+  flex-direction: column;
+  padding: 98px 109px 94px 0;
+
+  @include media-tablet {
+    width: 341px;
+    padding: 40px 0 70px 0;
+    order: -1;
+  }
+
+  @include media-mobile {
+    width: 330px;
+    padding: 24px 5px 24px 0;
+  }
+}
+.welcome__img {
+  padding: 60px 0 62px 109px;
+  max-width: 100%;
+
+  @include media-tablet {
+    padding: 40px 100px 125px 0;
+  }
+
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.welcome__info {
+  color: $color-text;
+  padding-top: 42px;
+  width: 525px;
+
+  @include media-tablet {
+    padding-top: 30px;
+    width: 341px;
+  }
+
+  @include media-mobile {
+    padding-top: 20px;
+    width: 315px;
+  }
+}
+
+.welcome-select {
+  padding-top: 48px;
+
+  @include media-tablet {
+    padding-top: 30px;
+  }
+
+  @include media-mobile {
+    padding-top: 25px;
+  }
+}
+
+.main-head {
+  color: $color-text-second;
+}
+
+.color-text__first {
+  color: $color-primary-dark;
+}

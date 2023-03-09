@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inika", serif;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 50px;
+
+  @include media-tablet {
+    font-size: 35px;
+  }
+
+  @include media-mobile {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+h2 {
+  font-family: "Inika";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+
+  @include media-tablet {
+    font-size: 35px;
+    line-height: 46px;
+    font-weight: normal;
+  }
+
+  @include media-mobile {
+    font-size: 25px;
+    line-height: 33px;
+  }
+}
+
+h3 {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: $color-primary-second;
+}
+
+p {
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 35px;
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: normal;
+  }
+
+  @include media-mobile {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: normal;
+  }
+}
+// *,
+// *::before,
+// *::after {
+//   border: 5px solid red;
+// }
